@@ -130,6 +130,7 @@ class Agent(object):
             raise
         except Exception as error:
             self._log_exception(error)
+            raise
 
     def increment(self, metric, value=1, timestamp=None, count=1):
         """
@@ -145,6 +146,7 @@ class Agent(object):
             raise
         except Exception as error:
             self._log_exception(error)
+            raise
 
 
     def notice(self, note, timestamp=None, duration=0):
@@ -162,6 +164,7 @@ class Agent(object):
             raise
         except Exception as error:
             self._log_exception(error)
+            raise
 
 
     def time(self, metric, fun, multiplier=1):
@@ -181,6 +184,7 @@ class Agent(object):
             raise
         except Exception as error:
             self._log_exception(error)
+            raise
 
     def time_ms(self, metric, fun):
         """
@@ -193,6 +197,7 @@ class Agent(object):
             raise
         except Exception as error:
             self._log_exception(error)
+            raise
 
     def is_running(self):
         """Returns True/False if the worker is running"""
